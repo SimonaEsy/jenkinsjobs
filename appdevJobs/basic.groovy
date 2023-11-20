@@ -1,3 +1,7 @@
+pipelineJob('MyDeclarativePipelineJob') {
+    definition {
+        cps {
+            script("""
 pipeline {
     agent any
     stages {
@@ -5,6 +9,10 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
+        }
+    }
+}
+""")
         }
     }
 }
