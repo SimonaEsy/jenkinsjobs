@@ -8,7 +8,7 @@ job('super-seed') {
   }
   steps {
     dsl {
-      external('/**/*.groovy')
+      external('**/*.groovy')
       removeAction('DELETE')
     }
   }
